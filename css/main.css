@@ -4,7 +4,7 @@ html {
   height: 100%;
   overflow: visible;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -17,33 +17,33 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .bg-yellow {
-  background-color: #EFE5D4;
+  background-color: #efe5d4;
 }
 
 .bg-red {
-  background-color: #EC172C;
+  background-color: #ec172c;
 }
 
 .bg-blue {
-  background-color: #3B55B7;
+  background-color: #3b55b7;
 }
 
 .bg-green {
-  background-color: #007C66;
+  background-color: #007c66;
 }
 
 .bg-purple {
-  background-color: #6337B1;
+  background-color: #6337b1;
 }
 
 .bg-orange {
-  background-color: #F1831D;
+  background-color: #f1831d;
 }
 
 .full-page-mobile,
@@ -102,11 +102,11 @@ html {
 }
 
 .c-banner {
-  background: url(../img/banner-mobile.png);
+  /* background: url(../img/banner-mobile.png); */
   height: 100%;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: bottom;
+  background-position-y: bottom; */
   padding: 0 20px;
 }
 
@@ -121,9 +121,9 @@ html {
 }
 
 .c-banner--text h1 {
-  color: #ED172C;  
+  color: #ed172c;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 4px;
@@ -131,30 +131,40 @@ html {
 }
 
 .c-banner--text p {
-  color: #222221;  
+  color: #222221;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin: 0;
 }
 
 @media (min-width: 600px) {
   .c-banner {
-    background: url(../img/banner.png);
+    /* background: url(../img/banner.png); */
     height: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: bottom; */
+    padding: 30px 30px 30px 60px;
+  }
+
+  .c-banner--img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: calc(35%);
   }
 
   .c-banner .title-desktop {
-    width: 80%;
+    width: 35%;
     display: block;
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   .c-banner--text {
-    width: 42%;  
+    width: 42%;
+    margin-top: 50px;
   }
 
   .c-banner .title-mobile {
@@ -171,6 +181,7 @@ html {
 
   .c-banner--text p {
     font-size: 29px;
+    margin-top: 25px;
   }
 }
 
@@ -336,7 +347,7 @@ html {
   height: auto;
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
   .box-2 {
     height: 100%;
     flex-direction: row;
@@ -363,8 +374,8 @@ html {
   }
 
   .rigth-green::before {
-    content: '';
-    background-color: #007C66;
+    content: "";
+    background-color: #007c66;
     position: absolute;
     width: 100000px;
     height: 100%;
@@ -372,8 +383,8 @@ html {
   }
 
   .rigth-orange::before {
-    content: '';
-    background-color: #F1831D;
+    content: "";
+    background-color: #f1831d;
     position: absolute;
     width: 100000px;
     height: 100%;
@@ -381,7 +392,7 @@ html {
   }
 
   .rigth-white::before {
-    content: '';
+    content: "";
     background-color: white;
     position: absolute;
     width: 100000px;
@@ -433,7 +444,7 @@ html {
   cursor: pointer;
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
   .c-footer {
     display: flex;
     flex-direction: row;
@@ -462,6 +473,6 @@ html {
   }
 
   .c-footer--item-redes .img img {
-    padding-left: 30px;  
+    padding-left: 30px;
   }
 }
