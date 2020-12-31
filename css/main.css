@@ -46,8 +46,8 @@ html {
   background-color: #F1831D;
 }
 
-.full-page,
-.full-page .container {
+.full-page-mobile,
+.full-page-mobile .container {
   height: 100%;
   position: relative;
 }
@@ -92,6 +92,12 @@ html {
 @media (min-width: 600px) {
   .c-header--right .logo {
     height: 54px;
+  }
+
+  .full-page-dsk,
+  .full-page-dsk .container {
+    height: 100%;
+    position: relative;
   }
 }
 
@@ -177,6 +183,7 @@ html {
 
 .box-1--img {
   width: 100%;
+  height: 100%;
 }
 
 .box-1--img img {
@@ -289,11 +296,13 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 100%;
+  justify-content: flex-end;
 }
 
 .box-2--item img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -329,8 +338,15 @@ html {
 
 @media (min-width: 600px) { 
   .box-2 {
-    display: flex;
+    height: 100%;
     flex-direction: row;
+  }
+
+  .box-2--item__text {
+    padding: 20px 10px 30px 10px;
+    color: white;
+    position: relative;
+    min-height: 200px;
   }
 
   .box-2--item__text h3 {
