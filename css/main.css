@@ -46,6 +46,18 @@ html {
   background-color: #efe5d4;
 }
 
+.bg-blue-2 {
+  background-color: #EBEDF8;
+}
+
+.color-blue {
+  color: #3B55B7;
+}
+
+.color-black {
+  color: #000000;
+}
+
 .full-page-mobile,
 .full-page-mobile .container {
   height: 100%;
@@ -494,5 +506,24 @@ html {
 
   .c-footer--item-redes .img img {
     padding-left: 30px;
+  }
+}
+
+.capitulo {
+  padding-top: 70px;
+}
+
+@media (min-width: 600px) {
+  .capitulo {
+    display: flex;
+    padding-top: 70px;
+  }
+  
+  .capitulo .box-2--item__text {
+    min-height: initial;
+  }
+
+  .capitulo .capitulo-rigth {
+    min-width: 450px;
   }
 }
