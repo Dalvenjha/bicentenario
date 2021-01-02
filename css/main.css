@@ -26,20 +26,46 @@ html {
   background-color: #ec172c;
 }
 
+.box-1:hover .bg-red,
+.box-2--item:hover .bg-red {
+  background-color: rgb(236 23 44 / 0.10);
+  color: #ec172c;
+}
+
 .bg-blue {
   background-color: #3b55b7;
+}
+
+.box-2--item:hover .bg-blue {
+  background-color: rgb(59 85 183 / 0.10);
+  color: #3b55b7;
 }
 
 .bg-green {
   background-color: #007c66;
 }
 
+.box-2--item:hover .bg-green {
+  background-color: rgb(0 124 102 / 0.10);
+  color: #007c66;
+}
+
 .bg-purple {
   background-color: #6337b1;
 }
 
+.box-2--item:hover .bg-purple {
+  background-color: rgb(99 55 177 / 0.10);
+  color: #6337b1;
+}
+
 .bg-orange {
   background-color: #f1831d;
+}
+
+.box-2--item:hover .bg-orange {
+  background-color: rgb(241 131 29 / 0.10);
+  color: #f1831d;
 }
 
 .bg-yellow {
@@ -50,12 +76,20 @@ html {
   background-color: #EBEDF8;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .color-blue {
   color: #3B55B7;
 }
 
 .color-black {
   color: #000000;
+}
+
+.color-red {
+  color: #ec172c;
 }
 
 .full-page-mobile,
@@ -218,6 +252,7 @@ html {
   flex-direction: column-reverse;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .box-1--img {
@@ -235,6 +270,7 @@ html {
   color: white;
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .box-1--text h2 {
@@ -281,7 +317,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
     box-sizing: border-box;
   }
 
@@ -298,7 +333,7 @@ html {
   .box-1--text h2 {
     font-size: 36px;
     line-height: 40px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0 60px;
     text-transform: initial;
   }
 
@@ -306,7 +341,7 @@ html {
     font-size: 20px;
     line-height: 29px;
     font-weight: 600;
-    padding: 20px;
+    padding: 20px 20px 20px 60px;
     margin: 0;
   }
 
@@ -321,7 +356,7 @@ html {
   .box-2--item__text .arrow,
   .box-1--text .arrow {
     cursor: pointer;
-    padding-left: 20px;
+    padding-left: 60px;
     position: initial;
     right: initial;
     bottom: initial;
@@ -331,6 +366,7 @@ html {
 .box-2 {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .box-2--item {
@@ -340,6 +376,7 @@ html {
   position: relative;
   height: 100%;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .box-2--item img {
@@ -352,6 +389,7 @@ html {
   padding: 20px 10px 30px 10px;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .box-2--item__text h3 {
@@ -525,5 +563,59 @@ html {
 
   .capitulo .capitulo-rigth {
     min-width: 450px;
+  }
+}
+
+.c-nav {
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 70px);
+  z-index: 2;
+  top: 70px;
+  display: none;
+}
+
+.c-nav.active {
+  display: block;
+}
+
+.c-nav nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-nav-item {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.c-nav-item h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c-nav-item p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .c-nav-item {
+    padding-left: 60px;
+  }
+
+  .c-nav-item h4 {
+    font-size: 22px; 
   }
 }
