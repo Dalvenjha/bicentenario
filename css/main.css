@@ -22,6 +22,10 @@ html {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .bg-red {
   background-color: #ec172c;
 }
@@ -30,6 +34,12 @@ html {
 .box-2--item:hover .bg-red {
   background-color: rgb(236 23 44 / 0.10);
   color: #ec172c;
+}
+
+.box-1.no-hover:hover .bg-red,
+.box-2--item.no-hover:hover .bg-red  {
+  background: #ec172c;
+  color: white;
 }
 
 .bg-blue {
@@ -41,6 +51,11 @@ html {
   color: #3b55b7;
 }
 
+.box-2--item.no-hover:hover .bg-blue {
+  background: #3b55b7;
+  color: white;
+}
+
 .bg-green {
   background-color: #007c66;
 }
@@ -50,6 +65,11 @@ html {
   color: #007c66;
 }
 
+.box-2--item.no-hover:hover .bg-green {
+  background: #007c66;
+  color: white;
+}
+
 .bg-purple {
   background-color: #6337b1;
 }
@@ -57,6 +77,11 @@ html {
 .box-2--item:hover .bg-purple {
   background-color: rgb(99 55 177 / 0.10);
   color: #6337b1;
+}
+
+.box-2--item.no-hover:hover .bg-purple {
+  background: #6337b1;
+  color: white;
 }
 
 .bg-orange {
@@ -74,6 +99,14 @@ html {
 
 .bg-blue-2 {
   background-color: #EBEDF8;
+}
+
+.bg-green-2 {
+  background-color: #E5F2EF;
+}
+
+.bg-purple-2 {
+  background-color: #EFEAF7;
 }
 
 .bg-white {
@@ -252,7 +285,6 @@ html {
   flex-direction: column-reverse;
   height: 100%;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .box-1--img {
@@ -366,7 +398,6 @@ html {
 .box-2 {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .box-2--item {
@@ -376,7 +407,6 @@ html {
   position: relative;
   height: 100%;
   justify-content: flex-end;
-  cursor: pointer;
 }
 
 .box-2--item img {
@@ -389,7 +419,6 @@ html {
   padding: 20px 10px 30px 10px;
   color: white;
   position: relative;
-  cursor: pointer;
 }
 
 .box-2--item__text h3 {
@@ -398,6 +427,7 @@ html {
   padding-bottom: 10px;
   font-weight: 600;
   width: 76%;
+  text-transform: uppercase;
 }
 
 .box-2--item__text p {
@@ -618,4 +648,28 @@ html {
   .c-nav-item h4 {
     font-size: 22px; 
   }
+}
+
+
+.box-2--item__video {
+  padding: 10px;
+}
+
+.w-96 {
+  width: 96% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .box-2--item__video {
+    padding: 40px 60px;
+  }
+  
 }
